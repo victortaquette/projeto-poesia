@@ -82,6 +82,8 @@ section.normal {
 }
 
 section.imagem {
+    max-width: 650px;
+    min-width: 320px;
     color: #FFFFFF;
     background-color: #BF7636;
     box-shadow: inset 3px 3px 20px 0px #f2a4445a; /*O inset é para dentro*/
