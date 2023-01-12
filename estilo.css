@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+@font-face {
+    font-family: 'London';
+            src: url('Fontes/old_london/OldLondon.ttf') format('truetype'), url('Fontes/old_london/Olondona.otf') format('opentype'); 
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Bona Nova', cursive;
+    --fonte3: 'London', serif;
+    --fonte4: 'Moon Dance', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+ /*
+  #F2D335
+  #F2C641
+  #F2A444
+  #BF7636
+  #0D0D0D
+ */
+
+html, body {
+    max-height: 100vh;
+    background-color: #F2C641;
+    font-family: var(--fonte2);
+}
+
+header {
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+header > h1 {
+   font-variant: small-caps;
+    padding-top: 50px;
+    font-family: var(--fonte3);
+    font-size: 8vw; /*Comando utilizado para quando ajustar o tamanho da tela a letra vai se adaptando com o formato da tela, se chama View Width*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte4);
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+section > p {
+    padding-bottom: 1em;
+}
+
+section.normal {
+    color: #FFFFFF;
+    background-color: #F2A444;
+}
+
+section.imagem {
+    color: #FFFFFF;
+    background-color: #BF7636;
+    box-shadow: inset 3px 3px 20px 0px #f2a4445a; /*O inset é para dentro*/
+    background-size: cover;
+    background-attachment: fixed; /*Efeito Paralax*/
+}
+
+section.imagem > p {
+    background-color: #0d0d0d3a;
+    display: inline-block;
+    text-shadow: 2px 2px 0px black;
+    
+}
+
+section#img01 {
+    background-image: url('images/wlop-2.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+section#img02 {
+    background-image: url('images/preview.gif');
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: #0D0D0D;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5px;
+    margin-top: 36px;
+}
