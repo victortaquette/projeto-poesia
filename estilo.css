@@ -85,7 +85,7 @@ section.imagem {
     color: #FFFFFF;
     background-color: #BF7636;
     box-shadow: inset 3px 3px 20px 0px #f2a4445a; /*O inset é para dentro*/
-    background-size: cover;
+    background-size: 900px;
     background-attachment: fixed; /*Efeito Paralax*/
 }
 
